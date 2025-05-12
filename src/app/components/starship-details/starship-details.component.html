@@ -1,0 +1,33 @@
+<div class="p-8 max-w-screen-md mx-auto text-white">
+  <h1 class="text-3xl font-bold mb-4 text-center">
+    {{ starshipDetails?.name }}
+  </h1>
+  <div
+    class="grid grid-cols-1 bg-gray-600 p-4 rounded-md md:grid-cols-2 gap-4 text-sm"
+  >
+    <p><strong>Model:</strong> {{ starshipDetails?.model }}</p>
+    <p><strong>Manufacturer:</strong> {{ starshipDetails?.manufacturer }}</p>
+    <p>
+      <strong>Cost in Credits:</strong> {{ starshipDetails?.cost_in_credits }}
+    </p>
+    <p><strong>Length:</strong> {{ starshipDetails?.length }}</p>
+    <p>
+      <strong>Max Atmosphering Speed:</strong>
+      {{ starshipDetails?.max_atmosphering_speed }}
+    </p>
+    <p><strong>Crew:</strong> {{ starshipDetails?.crew }}</p>
+    <p><strong>Passengers:</strong> {{ starshipDetails?.passengers }}</p>
+    <p>
+      <strong>Cargo Capacity:</strong> {{ starshipDetails?.cargo_capacity }}
+    </p>
+    <p><strong>Consumables:</strong> {{ starshipDetails?.consumables }}</p>
+    <p>
+      <strong>Hyperdrive Rating:</strong>
+      {{ starshipDetails?.hyperdrive_rating }}
+    </p>
+    <p><strong>MGLT:</strong> {{ starshipDetails?.MGLT }}</p>
+    <p>
+      <strong>Starship Class:</strong> {{ starshipDetails?.starship_class }}
+    </p>
+  </div>
+</div>
