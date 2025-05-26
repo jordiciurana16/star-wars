@@ -1,3 +1,51 @@
+body {
+  background: #000;
+}
+
+.stars {
+  background: #000;
+  position: relative;
+}
+
+.stars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  box-shadow: 20vw 10vh 1px 1px #fff, 20vw 10vh 8px 2px #fff6,
+    40vw 20vh 1px 1px #fff, 40vw 20vh 8px 2px #fff6, 60vw 30vh 1px 1px #fff,
+    60vw 30vh 8px 2px #fff6, 80vw 40vh 1px 1px #fff, 80vw 40vh 8px 2px #fff6,
+    10vw 50vh 1px 1px #fff, 10vw 50vh 8px 2px #fff6, 30vw 60vh 1px 1px #fff,
+    30vw 60vh 8px 2px #fff6, 50vw 70vh 1px 1px #fff, 50vw 70vh 8px 2px #fff6,
+    70vw 80vh 1px 1px #fff, 70vw 80vh 8px 2px #fff6, 90vw 90vh 1px 1px #fff,
+    90vw 90vh 8px 2px #fff6, 15vw 15vh 1px 1px #fff, 15vw 15vh 8px 2px #fff6,
+    25vw 25vh 1px 1px #fff, 25vw 25vh 8px 2px #fff6, 35vw 35vh 1px 1px #fff,
+    35vw 35vh 8px 2px #fff6, 45vw 45vh 1px 1px #fff, 45vw 45vh 8px 2px #fff6,
+    55vw 55vh 1px 1px #fff, 55vw 55vh 8px 2px #fff6, 65vw 65vh 1px 1px #fff,
+    65vw 65vh 8px 2px #fff6, 75vw 75vh 1px 1px #fff, 75vw 75vh 8px 2px #fff6,
+    85vw 85vh 1px 1px #fff, 85vw 85vh 8px 2px #fff6, 95vw 95vh 1px 1px #fff,
+    95vw 95vh 8px 2px #fff6, 5vw 80vh 1px 1px #fff, 5vw 80vh 8px 2px #fff6,
+    95vw 10vh 1px 1px #fff, 95vw 10vh 8px 2px #fff6;
+  animation: twinkle 1s infinite alternate ease-in-out;
+}
+@keyframes twinkle {
+  0% {
+    opacity: 0.5;
+    transition: ease-in-out 0.2s;
+  }
+  100% {
+    opacity: 1;
+    width: 4px;
+    height: 4px;
+    transition: ease-in-out 0.2s;
+  }
+}
 hr {
   border-color: white;
 }
